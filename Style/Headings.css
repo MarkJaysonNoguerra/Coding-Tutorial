@@ -1,0 +1,60 @@
+.tut .codes {
+	width : 80%;
+	height: 22.875rem;
+	margin : 0 auto;
+
+}
+.tut .Exec h1 {
+	font : 2rem;
+	color : red ;
+	margin : auto auto;
+	padding :0;
+	padding-bottom : 0.5rem;
+
+}
+.tut .Exec h2 {
+	font : 2rem;
+	color : red ;
+	margin : auto auto;
+	padding :0;
+	padding-bottom : 0.5rem;
+
+}
+.tut .Exec h3 {
+	font : 2rem;
+	color : red ;
+	margin : 0;
+	padding :0;
+	padding-bottom : 0.5rem;
+
+}
+.tut .Exec h4 {
+	font : 2rem;
+	color : red ;
+	margin : auto auto;
+	padding :0;
+	padding-bottom : 0.5rem;
+
+}
+.tut .Exec h5 {
+	font : 2rem;
+	color : red ;
+	margin : auto auto;
+	padding :0;
+	padding-bottom : 0.5rem;
+}
+.tut .Exec h6 {
+	font : 2rem;
+	color : red ;
+	margin : auto auto;
+	padding : 0;
+	padding-bottom : 0.5rem;
+
+}
+.tut .Exec {
+	padding-left : 6.25rem;
+	padding-top : 1.6rem;
+}
+.tut {
+	height: 114.375;
+}

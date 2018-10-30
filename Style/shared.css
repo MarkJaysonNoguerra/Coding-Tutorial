@@ -1,0 +1,141 @@
+
+* {
+	margin: 0;
+	padding : 0;
+	box-sizing : border-box;
+	
+}
+body {
+	 /* top, transparent red */ 
+    background :linear-gradient(
+      rgba(35,31,32, 0.7), 
+      rgba(35,31,32, 0.7)
+    ),
+    /* bottom, image */
+    url(../images/aaa.jpg);
+	background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    
+}
+
+.mainNav {
+	position : relative;
+		
+}
+.UlMainNav {
+	position :fixed;
+	background: #EAEAEA;
+	text-align : right;
+	width : 100%;
+	top : 0;
+	
+}
+.UlMainNav .home {
+	position : absolute;
+	left : 0;
+	top : 0.5rem;
+	left : 0.94rem;
+	float : left;
+  	padding : 0.31rem;	
+  	color : #231F20;
+
+}
+.UlMainNav a {
+
+	display : inline-block;
+	padding : 1.6rem 1.6rem 2.8rem 1.6rem;
+	font-family: courier, sans-serif;
+	text-decoration: none;	
+	color : #8E793E;
+	font-size : bold;
+	font-size : 1.4rem;
+	padding-bottom : 1.26rem;
+	
+}
+.UlMainNav a:hover {
+	color : #0a0a0a;
+}
+.UlMainNav .home:hover {
+	color : #231F20;
+}
+
+.SubMenu {
+	font-size : 0.94rem;
+	text-align: center;
+	float : left;
+	margin : 3.13rem 1.89rem;
+	margin-top : 0;
+	width : 25%;
+	height : 51.9rem;
+	display : inline-block;
+	border-radius: 1.6rem;
+	border: 0.06rem solid;
+    padding: 0.63rem;
+    
+}
+.SubMenu h1 {
+	color : #8E793E;
+	font-size : 2.81rem;
+	margin-top : 0.5rem;
+	font-family : "Proza Libre";
+}
+.SubMenu .Title a {
+	font-family: "Proza Libre";
+	color : #8E793E;
+	font-size : 1.88rem;
+	margin : 0.31rem 0;
+	text-decoration: none;
+}
+.SubMenu .Title a:hover {
+	color : #EAEAEA;
+}
+.SubMenu a {
+	text-decoration: none;
+	display : block;
+	padding : 0.63rem;
+	font-family: Dosis, San-serif;
+	color : #EAEAEA;
+	font-size : 1.4rem;
+}
+.SubMenu a:hover {
+	color : #AD974F;
+}
+.container {
+	width : 89%;
+	margin : 0 auto;
+}
+.tut {
+	margin : 3.12rem 31.3rem;
+	margin-top : 7.5rem;	
+	display : block;
+	width : 60%;
+	height: 75rem;
+	border-radius: 1.56rem;
+	border: 0.063rem solid;
+    padding: 0.63rem;
+   
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tut .codes {
+	width : 80%;
+	height: 11.9rem;
+	background: #151515;
+	margin : 0 auto;
+
+}
+.tut .code {
+	color : #231F20;
+}
+.tut li {
+	margin-left : 3.13rem;
+	margin-top : 1.25rem;
+	margin-bottom : 1.25rem;
+	color :#EAEAEA;
+}

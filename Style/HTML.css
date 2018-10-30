@@ -1,0 +1,59 @@
+.tut h1 {
+	font-size : 2.5rem;
+	color : #AD974F;
+	padding-top : 1.5625rem;
+	padding-left : 1.5625rem;
+	padding-bottom : 1.875rem;
+	font-family: "Proza libre";
+}
+.tut h2 {
+	font-size : 1.75rem;
+	color : #AD974F;
+	padding-left : 1.875rem;
+	font-family: "Proza libre";
+	margin : 1.25rem 0;
+}
+.tut h3 {
+	font-size: 1.625rem;
+	color :#AD974F;
+	padding-top : 0.9375rem;
+	padding-left : 1.5625rem;
+	font-family: "Proza libre";
+	margin : 0.9375rem 0;
+}
+.tut p {
+	font-size  : 1.25rem;
+	color : #EAEAEA;
+	line-height: 1.5rem;
+	margin : 0.5rem;
+	font-family: Dosis;
+	letter-spacing: .15rem;
+}
+.tut .codes {
+	width : 80%;
+	height: 11.875rem;
+	background: #EAEAEA;
+	margin : 0 auto;
+	font-family : Dosis;
+
+}
+.tut .code {
+	color : #0a0a0a;
+}
+.tut li {
+	font-size : 1.25rem;
+	margin-left : 3.125rem;
+	margin-top : 1.25rem;
+	margin-bottom : 1.25rem;
+	font-family : Dosis;
+}
+.tut .result {
+	border-bottom: 0.125rem solid #8E793E;
+	font-size : 1.75rem;
+	padding-bottom: 0.3125rem;
+	color : #AD974F;
+	font-family: Dosis;
+	padding-top : 0.5rem;
+	padding-left : 0.9375rem;
+	margin : 1.25rem 0;
+}

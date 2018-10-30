@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link rel="stylesheet" href="../Style/Imagetag.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="#">About Us</a>
+			<a href="#">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> HTML </a></h3>
+			<a href="introduction.html">Introduction</a>
+			<a href="HeadTag.html">Head Tag</a>
+			<a href="Headings.html">Headings</a>
+			<a href="Paragraph.html">Paragraph Tag</a>
+			<a href="Hyperlink.html">Hyperlink</a>
+			<a href="Attributes.html">Attributes</a>
+			<a href="FormatingTags.html">Formating Tags</a>
+			<a href="ImageTag.html">Image Tag</a>
+			<a href="table.html">Table Tag</a>
+			<a href="listtable.html">List Tags</a>
+			<a href="divandspan.html">Div and Span Tags</a>
+			<a href="forms.html">Forms</a>
+			<a href="fieldset.html">Fieldsets</a>
+			<a href="../Quiz/quiz.html">HTML Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1>
+			Image Tag
+		</h1>
+		<br>
+		<p>	
+			Unlike most elements, the image tag is a specific reference in your HTML document to an image on your website. It is more like an advanced link to an image file. The HTML image tag actually retrieves the image and displays it in your web page. However, unlike most elements, the image tag requires an attribute in order to display an image. The opening and closing tags are a unique case in the sense that they are combined, &lt;img /&gt;. The primary attribute of the img tag is src=””, where you would put the link to the image in between the quotation marks. Of course, the image tag has many other attributes, but this is the most important one you need to know to get started.
+		</p>
+		<h1>Show an Image</h1>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">
+			<p class="code">
+				&emsp; &lt;img src="smile.jpg width="200"/&gt;
+			</p>
+		</div><br>
+		<h3 class="result">
+			Result
+		</h3><br>
+		<img src="../images/smile.png" width="200"/>
+		<br><br>
+		<p>	
+			Pretty cool huh? Now, you might be wondering what is this width=”200″. The width and height are both attributes of the HTML image tag. I try to only use one or the other as this permits the browser to resize the image correctly. If you used them both at the same time and they are not the proper dimensions, it will stretch or shrink the image. The src is the attribute we set to the link to our image, smiley2.jpg
+		</p>
+		<h1>Important Alt attribute</h1>
+		<p>
+			The second most important attribute for an image is called the alt attribute. The alt attribute is only activated when an image fails to load. If you ever remove or lose an image from your website, the alt attribute will step up and display its value to the browser. Additionally, search engines cannot read what an image is all about, so search engines use the HTML image alt attribute to “understand” it. In conclusion, always set the alt attribute and set it to a value that tells the user about the image.
+		</p>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">
+			<p class="code">
+				 &lt;img src="smile.jpg  alt="A smiley face I created" width="200"/&gt;
+			</p>
+		</div>
+		</div>
+	</section>
+	<div class="clearfix"></div>
+	
+</body>
+</html>

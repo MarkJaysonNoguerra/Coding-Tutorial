@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link rel="stylesheet" href="../Style/forms.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="#">About Us</a>
+			<a href="#">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> HTML </a></h3>
+			<a href="introduction.html">Introduction</a>
+			<a href="HeadTag.html">Head Tag</a>
+			<a href="Headings.html">Headings</a>
+			<a href="Paragraph.html">Paragraph Tag</a>
+			<a href="Hyperlink.html">Hyperlink</a>
+			<a href="Attributes.html">Attributes</a>
+			<a href="FormatingTags.html">Formating Tags</a>
+			<a href="ImageTag.html">Image Tag</a>
+			<a href="table.html">Table Tag</a>
+			<a href="listtable.html">List Tags</a>
+			<a href="divandspan.html">Div and Span Tags</a>
+			<a href="forms.html">Forms</a>
+			<a href="fieldset.html">Fieldsets</a>
+			<a href="../Quiz/quiz.html">HTML Quiz</a>
+			
+	</section>
+	
+	<section class="tut">
+	<div class="container">
+		<h1>Forms</h1>
+		<p>
+			HTML forms could have their own category because they have many elements that have to work together in order for the form to work. Forms are the primary way users pass information to the server. The HTML form is encapsulated by the &lt;form&gt; tags and all of the inputs will fall in between the opening and closing form tags.
+
+            Forms are extremely useful because of the web 2.0 movement when sites became more and more user driven. Believe it or not all of the tutorials and categories on this website were inputted by forms that I created. If you have ever heard of content management systems (CMS), you are currently reading the results of my own construction of a CMS that operates with multiple forms and more complicated stuff (We will get to that later).
+
+            Now don’t get too excited. Since this is a HTML tutorial, our forms will be virtually useless. You generally need a server-side language like PHP, ASP, or ColdFusion to do something with the user’s inputted data.
+		</p>
+		<h1>The Many HTML Form Inputs</h1>
+		<p>Like normal, we won’t cover them all, but we will get you into the swing of things.
+		</p>
+		<ul>
+			<li>Text Fields – Allows the user to input text data in a one line field</li>
+			<li>Radio Buttons – Allows the user to select one option from multiple options</li>
+			<li>Checkboxes – Allows the user to select many options from multiple options</li>
+			<li>Submit Button – Allows the user to send the data<?
+		</li>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">	
+			<p class="code">
+				&lt;form&gt;<br>
+				&emsp;Your name:&lt;input type="text" name="yourName" /&gt;<br>
+				&emsp;&lt;input type="radio" name="group1" value="1"/&gt; Pick me!<br>
+				&emsp;&lt;input type="radio" name="group1" value="2"/&gt; No Pick me!<br>
+				&emsp;&lt;input type="checkbox" name="checkbox1" value="1"/&gt; Pick me!<br>
+				&emsp;&lt;input type="checkbox" name="checkbox1" value="2"/&gt; Pick me too!<br>
+				&emsp;&lt;input type="submit" value="Send Data"/&gt;<br>
+				&lt;/form&gt;
+			</p>
+		</div>
+		<h3 class="result">
+			Result
+		</h3>
+		<form> 
+		    Your name:<input type="text" name="yourName" />  
+		    <input type="radio" name="group1" value="1" /> Pick me! 
+		    <input type="radio" name="group1" value="2" /> No pick me! 
+		    <input type="checkbox" name="checkBox1" value="1" /> Pick me! 
+		    <input type="checkbox" name="checkBox1" value="2" /> Pick me too! 
+		    <input type="submit" value="Send Data"/> 
+		</form> 
+		<p>
+			Not the best looking form, but it will do. Typically, the form tag will have several attributes including the name, action, and the method. The name attribute is only to differentiate one form from another on the page. The action attribute is set to the page where you will pass the data (generally, this will not be an HTML page). Finally, the method attribute will determine how you want to send the data. Don’t worry about this for now.
+		</p>
+		<h1> 
+			Text Field 
+		</h1>
+		<p>
+			Let’s get into the inputs. You probably already noticed that they are all defined with an input tag and different type attributes. Technically, there is a textarea tag for multi-line text inputs that is not in an input tag, but we are not going to cover it in this tutorial. The first input is one of the most common input type attribute values, the text type, which is short for text field. It is fairly simple to implement, but you should definitely name it so that you can tell it apart from any other text fields in the form.
+		</p>
+		<h1>
+			Radio Buttons and Checkboxes
+		</h1>
+		<p>
+			Form radio buttons and checkboxes require their own explanation. Radio buttons are abstractly thought of as groups where we must concretely type them in with the same name attribute as their brother to make them a family/group thing. If you didn’t give them the same name you would defeat the purpose of a radio button, which is too present multiple options but only allow one to be selected. Put the input type set to “radio” in order to tell the HTML document that it is a radio button. Another attribute that you should give to the radio buttons is the value attribute. Your server will receive this value from the user. Checkboxes are the cousins of radio buttons. However, a user can check as many checkboxes as they like. You don’t have to name them the same, but when you get to processing the data on the server-side, you will be glad you did.
+		</p>
+		<h1>
+			Submit Button
+		</h1>
+		<p>
+			Last but not least, is the required submit button. Setting the type attribute to “submit” will give you the very powerful command to send the data. It is recommended to only have one submit button and you should always assign a value to it. The value attribute shows the user text and it is also the value sent to the server. Whew! Take a breather, you earned it.
+		</p>
+
+
+		
+	</div>	
+	</section>
+	
+	<div class="clearfix"></div>
+	
+</body>
+</html>

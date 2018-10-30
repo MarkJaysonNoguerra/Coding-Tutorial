@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link rel="stylesheet" href="../Style/table.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="#">About Us</a>
+			<a href="#">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> HTML </a></h3>
+			<a href="introduction.html">Introduction</a>
+			<a href="HeadTag.html">Head Tag</a>
+			<a href="Headings.html">Headings</a>
+			<a href="Paragraph.html">Paragraph Tag</a>
+			<a href="Hyperlink.html">Hyperlink</a>
+			<a href="Attributes.html">Attributes</a>
+			<a href="FormatingTags.html">Formating Tags</a>
+			<a href="ImageTag.html">Image Tag</a>
+			<a href="table.html">Table Tag</a>
+			<a href="listtable.html">List Tags</a>
+			<a href="divandspan.html">Div and Span Tags</a>
+			<a href="forms.html">Forms</a>
+			<a href="fieldset.html">Fieldsets</a>
+			<a href="../Quiz/quiz.html">HTML Quiz</a>
+			
+	</section>
+	
+	<section class="tut">
+	<div class="container">
+		<h1>
+			Table Tag
+		</h1>
+		<p>
+			The HTML table tag has done wonders for the internet as a whole. However, tables are often used as grids or containers, which is not the appropriate use of HTML tables. Tables are not very flexible and are primarily intended to show tabular data. The tags of a table require more opening and closing tags than the average HTML element. Let’s look at an example to see:
+		</p>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">	
+			<p class="code">
+				&lt;table&gt;<br>
+				&emsp; &lt;tr&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 1 Column 1&lt;/td&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 1 Column 2&lt;/td&gt;<br>
+				&emsp;&lt;/tr&gt;<br>
+				&emsp; &lt;tr&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 2 Column 1&lt;/td&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 2 Column 2&lt;/td&gt;<br>
+				&emsp;&lt;/tr&gt;<br>
+				&lt;/table&gt;<br>
+			</p>
+		</div>
+		<br>
+		<h3 class="result">
+			Example
+		</h3>
+			<table>
+	    <tr>
+	        <td>Row 1 Column 1</td>
+	        <td>Row 1 Column 2</td>
+	    </tr>
+	    <tr>
+	        <td>Row 2 Column 1</td> 
+	        <td>Row 2 Column 2</td>
+	    </tr><br><br>
+			</table><br><br>
+		<p>
+			Three separate tags are involved in creating an HTML table, &lt;table&gt;, &lt;tr&gt;, and &lt;td&gt;. The &lt;table&gt; is simply the encasing of a table. To identify a new row, which must come first, you should use the &lt;tr&gt; tag. Inside of the table row tag, you can specify columns by using the &lt;td&gt; tag. Remember that you can access all of the accepted HTML attributes of every element by clicking the w3.org reference in the HTML Attributes references.
+		</p>
+		<p>
+            It’s worth mentioning that you must structure the table and table tags properly. All tr must be opened and closed inside the &lt;table&gt;&lt;/table&gt; tags. The th and td tags must be opened and closed inside the tr tags. If you do this incorrectly, you will have one messed up looking table.
+		</p>
+		<h1>
+			Table Headers 
+		</h1>
+		<p>
+			Sometimes when creating an HTML table, you might want the top row to stand out from the rest as a heading. All you need to do is replace the HTML table column tag, &lt;td&gt;, with a table header tag, &lt;th&gt;. It is entirely possible to use these multiple times different rows to have multiple “sections” in your table. Table headers also permit you to have better control of your CSS.
+		</p>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">	
+			<p class="code">
+				&lt;table&gt;<br>
+				&emsp; &lt;tr&gt;<br>
+				&emsp;&emsp;&lt;th&gt;Row 1 Column 1&lt;/th&gt;<br>
+				&emsp;&emsp;&lt;th&gt;Row 1 Column 2&lt;/th&gt;<br>
+				&emsp;&lt;/tr&gt;<br>
+				&emsp; &lt;tr&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 2 Column 1&lt;/td&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 2 Column 2&lt;/td&gt;<br>
+				&emsp;&lt;/tr&gt;<br>
+				&lt;/table&gt;<br>
+			</p>
+		</div>
+		<h1>Mergin Columbs</h1>
+		<p>
+			Sometimes, you might want to merge two columns to display your data correctly in a row. All we need to do is use the colspan attribute of the HTML table. Let’s merge two columns in one row.
+		</p>
+		<h3  class=result>
+			Example
+		</h3>
+		<div class="codes">
+			<p class="code">
+			&lt;table&gt;<br>
+				&emsp; &lt;tr&gt;<br>
+				&emsp;&emsp;&lt;td colspan="2"&gt;Row 1 Column 1&lt;/td&gt;<br>
+				&emsp;&lt;/tr&gt;<br>
+				&emsp; &lt;tr&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 2 Column 1&lt;/td&gt;<br>
+				&emsp;&emsp;&lt;td&gt;Row 2 Column 2&lt;/td&gt;<br>
+				&emsp;&lt;/tr&gt;<br>
+				&lt;/table&gt;<br>
+			</p>
+		</div>
+		<br>
+		<h3 class="result">
+			Result
+		</h3>
+		<br><br>
+			<table>
+			    <tr>
+			        <td colspan="2">Row 1 Column 1</td>
+			    </tr>
+			    <tr>
+			        <td>Row 2 Column 1</td> 
+			        <td>Row 2 Column 2</td>
+			    </tr>
+			</table>
+		
+
+		
+	</div>	
+	</section>
+	
+	<div class="clearfix"></div>
+	
+</body>
+</html>

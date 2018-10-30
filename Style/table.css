@@ -1,0 +1,12 @@
+.tut .codes {
+	height: 15.625rem;
+}
+.tut {
+	height: 159.375rem;
+}
+td {
+	border-top : 0.0625rem solid black;
+	border-bottom : 0.0625rem solid black;
+	padding : 0.3125rem;
+	color : #EAEAEA ;
+}

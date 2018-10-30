@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link rel="stylesheet" href="../Style/Hyperlink.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="#">About Us</a>
+			<a href="#">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> HTML </a></h3>
+			<a href="introduction.html">Introduction</a>
+			<a href="HeadTag.html">Head Tag</a>
+			<a href="Headings.html">Headings</a>
+			<a href="Paragraph.html">Paragraph Tag</a>
+			<a href="Hyperlink.html">Hyperlink</a>
+			<a href="Attributes.html">Attributes</a>
+			<a href="FormatingTags.html">Formating Tags</a>
+			<a href="ImageTag.html">Image Tag</a>
+			<a href="table.html">Table Tag</a>
+			<a href="listtable.html">List Tags</a>
+			<a href="divandspan.html">Div and Span Tags</a>
+			<a href="forms.html">Forms</a>
+			<a href="fieldset.html">Fieldsets</a>
+			<a href="../Quiz/quiz.html">HTML Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+			<h1>Hyperlink</h1>
+			<p>
+				In itself, an HTML hyperlink is one of the most useful distinctions between the internet and a standard text file. Linking is the foundation of the internet and this is the little tag that got a majority of the ball rolling. You can employ links to provide navigation to other content, which allows fantastic organization and eliminates the fear of the user becoming claustrophobic with too much content on one page. Before we go any farther, hyperlinks are often referred to as anchor tags. However, some people talk about anchor tags in their use as a table of contents where you click the link and it navigates you further down the page. Technically, it is a hyperlink that links the certain content of the same page. Finally, the last important note about hyperlinks is that they contain urls, which can be relative and absolute.
+			</p>
+			<h1>
+				Relative and Absolute links
+			</h1>
+			<p>
+				Absolute links are generally used for navigation outside your website. For example, http://www.afterhoursprogramming.com/index.php is an absolute link. However let’s say I have an HTML document called index.php and it is in my root directory (www.afterhoursprogramming.com/) I can link to that same index.php file by using a link has a reference to “index.php”. That is all you would need to put in the href attribute, no http://www.afterhoursprogramming.com/ because you are in that same directory. That my friend is a relative link.
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">
+			<p class="code">
+				&lt;a href="http://www.Tutorialpoint.com/"&gt; Absolute Link&lt;/a&gt;<br>
+				&lt;a href="/"&gt; Relative Link&lt;/a&gt;<br>
+			</p>
+		</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<div class="change">
+			<a href="introduction.html">Absolute Link</a>
+			<a href="introduction.html">Relative</a>
+			</div>
+			<p>
+				The href is actually an attribute of the &lt;a&gt; tag. Well will discuss attributes later because almost all HTML tags have attributes and there are numerous amount of them.
+			</p><br>
+			<p>
+				Now, if my index.php file moved to another folder, let’s say it moved to http://www.afterhoursprogramming.com/newFolder/. If I were to use a relative link from that index.php, I would use a reference or source of newFolder/index.php because I am still in the root folder, but I need to get to the newFolder to access the index.php.
+			</p>
+			<h2>
+				Internal Anchor Tags
+			</h2>
+			<p>	
+				Quite often, people love to create massive pages with a table of contents. While I strongly argue against this, I will explain how to create internal page linking. Almost every HTML element has a id attribute, which is a unique identifier. All that is required to have this collection of internal anchor tags is to simply link to this element on the page. Then add a # sign plus the id of the element. While it is somewhat confusing to explain with words, it is easier to show with an example.
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">
+			<p class="code">
+				&lt;a href='pageName.html#sampleId'&gt;Go to element with id of sampleId&lt;/a&gt;<br>
+				&lt;p id='sampleId'&gt;Some text&lt;/a&gt;<br>
+			</p>
+		</div>
+			<p>
+				Whenever a user clicks the top link in the example, the browser scrolls to the bottom link no matter how much content is in between the two links. So, if we wanted to link to a few lines of text, we could place a container element (like the paragraph tag) around the lines of text with a unique id that we could link to using hyperlinks. Like the example above, we can place our text in the paragraph tag with an id of sampleId and then link to it with a hyperlink pointing to #sampleId using the hyperlink’s href attribute.
+			</p>
+		
+		</div>
+	</section>
+	<div class="clearfix"></div>
+	
+</body>
+</html>

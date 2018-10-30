@@ -1,0 +1,18 @@
+input[type="submit"] {
+	padding : 0.3125rem;
+	background : #EAEAEA;
+	color : #0a0a0a;
+	border-radius: 0.3125rem;
+	display : block;
+}
+.tut {
+	height: 178.125rem;
+}
+.tut .codes {
+	height: 15.625rem;
+	width : 115%;
+	margin-left : -3.4375rem;
+}
+form {
+	width: 110%;
+}

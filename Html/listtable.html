@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link rel="stylesheet" href="../Style/listtable.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="#">About Us</a>
+			<a href="#">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> HTML </a></h3>
+			<a href="introduction.html">Introduction</a>
+			<a href="HeadTag.html">Head Tag</a>
+			<a href="Headings.html">Headings</a>
+			<a href="Paragraph.html">Paragraph Tag</a>
+			<a href="Hyperlink.html">Hyperlink</a>
+			<a href="Attributes.html">Attributes</a>
+			<a href="FormatingTags.html">Formating Tags</a>
+			<a href="ImageTag.html">Image Tag</a>
+			<a href="table.html">Table Tag</a>
+			<a href="listtable.html">List Tags</a>
+			<a href="divandspan.html">Div and Span Tags</a>
+			<a href="forms.html">Forms</a>
+			<a href="fieldset.html">Fieldsets</a>
+			<a href="../Quiz/quiz.html">HTML Quiz</a>
+			
+	</section>
+	
+	<section class="tut">
+	<div class="container">
+		<h1>
+			List Tags
+		</h1>
+		<p>
+			When writing any document, lists provide quick bursts of information in the most efficient manner. HTML Lists are no different when used in an HTML document. In a browser, there are only two types of lists, ordered and unordered. Ordered lists obviously have a predictable layout such as numbers or roman numerals. The standard for ordered lists is numbers, but you can always modify that in the CSS. Unordered lists are generally small black dots that can also be changed in the CSS. Lists require two sets of tags. The encapsulating tag is &lt;ol&gt; for ordered lists and &lt;ul&gt; for unordered lists. The element inside that tag is the &lt;li&gt; where your content will go in between the opening and closing tags of the that li element.
+		</p>
+		<h1>
+			HTML Order Lists
+		</h1>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">	
+			<p class="code">
+				&lt;ol&gt;<br>
+				&emsp;&emsp;&lt;li&gt;List Item 1&lt;/li&gt;<br>
+				&emsp;&emsp;&lt;li&gt;List Item 2&lt;/li&gt;<br>
+				&emsp;&lt;/ol&gt;<br>
+			</p>
+		</div>
+		<h3 class="result">
+			Result
+		</h3>
+		<ol>
+		    <li>List Item 1</li>
+		    <li>List Item 2</li>
+		</ol>
+		<h1>
+			HTML Unorder Lists
+		</h1>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">	
+			<p class="code">
+				&lt;ul&gt;<br>
+				&emsp;&emsp;&lt;li&gt;List Item 1&lt;/li&gt;<br>
+				&emsp;&emsp;&lt;li&gt;List Item 2&lt;/li&gt;<br>
+				&emsp;&lt;/ul&gt;<br>
+			</p>
+		</div>
+		<h3 class="resut">
+			Result
+		</h3>
+		<ul>
+		    <li>List Item 1</li>
+		    <li>List Item 2</li>
+		</ul>
+		<p>
+			Pretty easy to understand there, but what if we wanted to have another level in the list? You can create lists inside lists. You would simply just start putting &lt;ul&gt; with internal &lt;li&gt; inside the previous &lt;li&gt; elements. Alright, maybe that is somewhat complicated… example please!
+		</p>
+		<h1>
+			HTML Multiple Level Lists
+		</h1>
+		<h3 class="result">
+			Example
+		</h3>
+		<div class="codes">	
+			<p class="code">
+				&lt;ul&gt;<br>
+				&emsp;&lt;li&gt;List Item 1
+				&emsp;&emsp;&lt;ul&gt;<br>
+				&emsp;&emsp;&emsp;&lt;li&gt;List Item 1 Sub 1&lt;/li&gt;<br>
+				&emsp;&emsp;&emsp;&lt;li&gt;List Item 2 Sub 2&lt;/li&gt;<br>
+				&emsp;&emsp;&lt;/ul&gt;<br>
+				&emsp;&lt;/li&gt;<br>
+				&lt;/ul&gt;<br>
+			</p>
+		</div>
+		<h3 class="result">
+			Result
+		</h3>
+
+		<ul>
+		    <li>List Item 1 
+		        <ul>
+		            <li>List Item 1 Sub 1</li> 
+		            <li>List Item 1 Sub 2</li>
+		        </ul>
+		    </li>
+		</ul> 
+
+					
+
+		
+	</div>	
+	</section>
+	
+	<div class="clearfix"></div>
+	
+</body>
+</html>
