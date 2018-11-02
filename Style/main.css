@@ -18,7 +18,7 @@ nav {
   	padding : 0.31rem;	
 }
 ul a {
-		display : inline-block;
+	display : inline-block;
 	padding : 1.6rem;
 	font-family: sans-serif;
 	text-decoration: none;	
@@ -68,7 +68,24 @@ ul a:hover {
 	background-size :cover;
 }
 
+@media only screen and (max-width:900px) {
+	
+.home {
+	position : relative;
+	display : block;
+	padding-bottom : 1rem;
+	margin-right  :10rem;	
+}
+ul a {
+	padding : 0.5rem;
+	margin : 0.3rem;
+	padding-top : .8rem;
+	padding-bottom : .8rem;
+	
+}
+ .main-menu a {
+	margin : 2.5rem 3rem;
+}
 
-
-
+}
 

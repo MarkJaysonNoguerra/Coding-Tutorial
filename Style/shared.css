@@ -74,6 +74,12 @@ body {
     padding: 0.63rem;
     
 }
+.SubMenu::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .SubMenu h1 {
 	color : #8E793E;
 	font-size : 2.81rem;
@@ -116,8 +122,13 @@ body {
     padding: 0.63rem;
    
 }
+.tut::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -139,3 +150,43 @@ body {
 	margin-bottom : 1.25rem;
 	color :#EAEAEA;
 }
+.next  {
+	background : #EAEAEA;
+	color : #231F20;
+	text-align: center;
+	font-size : 3rem;
+	font-family : Dosis;
+	text-decoration: none;
+	padding : .5rem 14rem;
+	display : none;
+
+}
+@media only screen and (max-width:900px) {
+.SubMenu {
+	display : none;
+}
+.tut { 
+	margin : 10rem auto;
+	width : 94%;
+	border : none;
+}
+.container {
+	width  :98%;
+}
+.UlMainNav .home {
+	position : relative;
+	display : block;
+	padding-bottom : 1rem;
+	margin-right  :10rem;
+}
+.UlMainNav a {
+	padding : 0.5rem;
+	margin : 0.3rem;
+	padding-top : .8rem;
+	padding-bottom : .8rem;
+}
+.next {
+	display : block;
+}
+}
+
