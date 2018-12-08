@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>SELECT Query</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/stylesql.css">
+	<link rel="stylesheet" href="../Style/insertstyle.css">
+		
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="selectquery.html">SELECT Query</a>
+			<a href="insertquery.html">INSERT Query</a>
+			<a href="updatequery.html">UPDATE Query</a>
+			<a href="deletequery.html">DELETE Query</a>
+			<a href="multipleconditions.html">Multiple Condition</a>
+			<a href="orderbyandgroupby.html">ORDER BY and GROUP BY</a>
+			<a href="like.html">LIKE</a>
+			<a href="joins.html">JOINs</a>
+			<a href="dateanddatetime.html">DATE and DATETIME</a>
+			<a href="functions.html">Functions</a>
+			<a href="comparingdates.html">Comparing Dates</a>
+			<a href="roundingnumbers.html">Rounding Numbers</a>
+			<a href="sqlquiz.html">SQL Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> SELECT Query </h1>
+		<br><br>
+			<p>
+				With an intent of data manipulation, you really only have 4 types of SQL statements you can make: SELECT, INSERT, UPDATE, or DELETE. We will first discuss the only way to get information from a database using the SQL command SELECT. SELECT is probably the most common query that you will use. You probably are more concerned with displaying data to the user as opposed to get data from them. Luckily in SQL, the SELECT statement has the easiest syntax to master. First up, we need some information to retrieve. Think of this following table as a table in your database that you just created. Now we are ready to perform master SQL ninja skills.
+			</p>
+			<br><br><br>
+			<h1>SQL SELECT STATEMENT</h1><br><br><br>
+			<p>
+				So this is our default table. Nothing really to special about it. It is just a tiny little users with a bad way to store passwords (you should look into hashing passwords if you plan to create a real users table). Now let’s get some data from our table.
+			</p>
+				<br>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">
+				<p class="code">
+					SELECT username <br>
+					FROM table_name
+				</p>
+			</div>
+			<p>
+				bobdole32<br>
+				rustyMeerkat<br>
+				theFlanders<br>
+
+
+			</p>
+			<br><br>
+			<p>
+				
+We already know that SELECT simply tells SQL we want to get information from the database. Then, username is just the name of the column that we want returned. So, if we would have put the column name as “id” we would have returned the 1, 2, and 3. You can add extra column names by putting a comma after the column before the new column name. Next, we have to tell SQL where SELECT data with the FROM keyword, which just gives SQL a table name. That is one simply query, but let’s get more specific
+			</p>
+			<br><br><br>
+			<h1>WHERE Keyword</h1>
+			<br><br>
+			<p>
+				SQL has a built in keyword WHERE that you can give a condition. Pseudo code here: WHERE column_name = “value”. The WHERE keyword is another term you will use very often in your queries, because you probably don’t want to work with every record in the table all the time. WHERE allows you to work with a selected set of records. Let’s steal “theFlanders” password:
+			</p>
+				<br><br><br>
+				<p>
+					WHERE is fairly straight forward when you are searching for single exact matches. What if I had 2 or more conditions? We’ll get into the more advanced stuff like that after we introduce all of the SQL Statements. All you would really need to do is add an AND or an OR after the WHERE statement. You can add as many as you want. Go ahead and go crazy.
+				</p>
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

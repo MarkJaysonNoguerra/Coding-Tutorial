@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Classes</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/position.css">
+	
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="classes.html">Classes</a>
+			<a href="font.html">Font Spacing</a>
+			<a href="background.html">Background</a>
+			<a href="links.html">Links</a>
+			<a href="list.html">list</a>
+			<a href="tables.html">Tables</a>
+			<a href="border.html">Border</a>
+			<a href="marginpadding.html">Margin and Padding</a>
+			<a href="displayfloat.html">Display and Float</a>
+			<a href="position.html">Position and Alignment</a>
+			<a href="cssquiz.html">CSS Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Position and Alignment </h1>
+		<br><br>
+			<p>
+				Position is another CSS property that deals with alignment and organization of HTML elements. Generally partnered with the position property are the alignment properties: top, right, bottom, left. In a specific combination of position and alignment properties, you obtain the same styling that is used for the bottom footer of this page. Notice how it always seems to stick to the bottom even when you scroll down. That is because it is rendered to the window and not technically to the page.
+			</p>
+			<br>
+			<h2>
+				CSS Position and Alignment Properties Values
+			</h2>
+			<ul>
+				<li>absolute – stays where you tell it regardless of other objects</li>
+				<li>fixed – appended to window (moves when user scrolls)</li>
+				<li>relative – placed next its normal position</li>
+				<li>static – placed in its default position</li>
+			
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				&emsp;div.special &#123;<br>
+				&emsp;&emsp;position:fixed;<br>
+				&emsp;&emsp;bottom:30px;<br>
+				&emsp;&emsp;background-color:#000;<br>
+				&emsp;&emsp;color:#fff;<br>
+
+
+				&#125;<br>
+				&lt;/style&gt;<br>
+				&lt;div class="special"&gt;<br>
+				&emsp;Sample Text
+				&lt;/div&gt;
+				
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3><br><br><br>
+			<div style="        position:relative;
+        bottom:30px;
+        background-color:#000;
+        color:#fff;">
+        	Sample Text
+        </div>
+			<br><br><br><br>
+			<p> The result box is rather useless on this particular example, but I’ll keep it anyway. We already understand the color and background-color properties. So, first we’ll discuss position. When set to fixed, the position properties tells the browser to join that to the window and not to the actual document. This allows a nice smooth element like a footer or a header to remain in the user’s view the entire time. Just as in important is the alignment property, which in this case is bottom. This property tells the browser where to join the fixed positioned element. I am not going to show the other properties, in an effort not to destroy my page layout so that you can still navigate. So, feel free to tinker around with them.
+
+
+
+
+			</p>
+			<br><br><br>
+			
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

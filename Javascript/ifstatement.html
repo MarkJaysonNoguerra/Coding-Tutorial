@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>If Statements</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/ifstatement.css">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="Operators.html">Operators</a>
+			<a href="ifstatement.html">If Statements</a>
+			<a href="switchstatement.html">Switch Statement</a>
+			<a href="function.html">Functions</a>
+			<a href="Javascript quiz">Javascript Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1>If Statements</h1>
+		<br><br>
+			<p>
+				If your new to programming, this will be a great tutorial for the fundamentals of programming logic. An if statement is one of a few ways to do something when a condition is set. It helps control the flow of your coding logic.
+			</p>
+			<br><br><br>
+			<h3>In English:</h3>
+			<br>
+			<p>	If you are thristy, take a drink.</p>
+			<br><br>
+			<p>
+				We are just going to assume that from now that the code in the examples are embedded in the &lt;script&gt; tags that are in the body of an HTML document
+			</p>
+			<br><br><br>	
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes" style="height:15rem">	
+			<p class="code">
+			var thirsty = true;<br>
+			var drank = false;<br>
+			if(thirsty == true)  //notice the ==<br>
+			&#123;
+			&emsp;drank = true;<br>
+			&emsp;document.write(drank);<br>
+			&#125;
+			</p>
+		</div>
+			<br><br>
+			<h3 class="result">Result</h3>
+			<br><br>
+			<p>true </p>
+			<br><br>
+			<p>The == is one of the comparison operators. It is not the same as = that sets a variable or property equal to something. Since, the variable thirsty does equal true the if is executed. If the statement would have said if(thirsty == false), drank would not have been set to true.
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+			var x = 7;<br>
+			if(x===7)<br>
+			&#123; <br>
+			    //this would be executed<br>
+			&#125;<br>
+			if(x==="7")<br>
+			&#123;<br>
+			    //this would not be executed because === is a strict operator that makes sure that the variable is set to the correct value and type of the conditional variable. The conditional variable here is is "7"<br>
+			&#125;<br>
+			if(x!=8)<br>
+			&#123;<br>
+			    //this would be executed because != means that the variable is not equal to the conditional variable<br>
+			&#125;<br>
+			if(x>8)<br>
+			&#123;<br>
+			    //Since 7 is not greater 8, this would not be executed<br>
+			&#125;<br>
+			if(x<8)<br>
+			&#123;<br>
+			    //Since 8 greater 7, this would be executed<br>
+			&#125;<br>
+			if(x>=7)<br>
+			&#123;<br>
+			    //Since 7 is equal 7, this would be executed<br>
+			&#125;<br>
+			if(x<=6)<br>
+			&#123;<br>
+			    //Since 7 is not less than or equal to 6 this would not be executed<br>
+			&#125;<br>
+
+			var x = 7;<br>
+			if(x===7)<br>
+			&#123; <br>
+			    //this would be executed<br>
+			&#125;<br>
+			if(x==="7")<br>
+			&#123;<br>
+			    //this would not be executed because === is a strict operator that makes sure that the variable is set to the correct value and type of the conditional variable. The conditional variable here is is "7"<br>
+			&#125;<br>
+			if(x!=8)<br>
+			&#123;<br>
+			    //this would be executed because != means that the variable is not equal to the conditional variable<br>
+			&#125;<br>
+			if(x>8)<br>
+			&#123;<br>
+			    //Since 7 is not greater 8, this would not be executed<br>
+			&#125;<br>
+			if(x<8)<br>
+			&#123;<br>
+			    //Since 8 greater 7, this would be executed<br>
+			&#125;<br>
+			if(x>=7)<br>
+			&#123;<br>
+			    //Since 7 is equal 7, this would be executed<br>
+			&#125;<br>
+			if(x<=6)<br>
+			&#123;<br>
+			    //Since 7 is not less than or equal to 6 this would not be executed<br>
+			&#125;<br>
+			
+			</p>
+		</div>
+			<br><br>
+			<p>
+				The comparison operators are extremely useful, but they are not just restricted to integers. For example, if(x == “example”) would return false, since 7 is not equal to the string “example”.
+			</p>
+			<br><br><br>
+			<div class="not">
+				<a href="ifstatement1.html">Next</a>
+			</div>
+			
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

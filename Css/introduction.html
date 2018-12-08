@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Introduction</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/introcss.css">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="classes.html">Classes</a>
+			<a href="font.html">Font Spacing</a>
+			<a href="background.html">Background</a>
+			<a href="links.html">Links</a>
+			<a href="list.html">list</a>
+			<a href="tables.html">Tables</a>
+			<a href="border.html">Border</a>
+			<a href="marginpadding.html">Margin and Padding</a>
+			<a href="displayfloat.html">Display and Float</a>
+			<a href="position.html">Position and Alignment</a>
+			<a href="cssquiz.html">CSS Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Introduction </h1>
+		<br><br>
+			<p>
+				So, you are sold on using CSS to style your HTML elements? First, we need to figure out how to tell the browser we are using CSS. We can do this by referencing the CSS as a separate file or we can place it inside our HTML document.
+			</p>
+			<br>
+			<h2>
+				Referencing a Cascading Style Sheet
+			</h2>
+			<p>
+				There are three ways to define CSS.
+			<p>
+				<ul> 
+					<li>Inline/element Styling (Not so great)</li>
+					<li>Internal Style Sheet (Not bad)</li>
+					<li>External Style Sheet (The best way)</li>
+				</ul>
+			<h3>
+				Inline or Element Styling
+			</h3>
+			<p>
+				Inline/element styles are the worst because if you ever want to change a style later, you will have to drill down through your HTML to find the element and change its style tag. Please don’t do this unless you never want to change that element later.
+			</p>
+			<br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;p style="color:#900;"&gt;Sample Styled Text&lt;/p&gt;
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<br><br>
+			<p style="color:#900";>Sample Styled Text</p>
+			<h2>Internal Style Sheet</h2>
+			<br><br>
+			<p>
+				The reason I am not too fond of this way to utilize CSS is that it doesn’t permit other HTML files to use it. Yes, it still does permit you to change multiple items in a class, but why not just make it to where all HTML pages can use that class? However, if you argue that it might crowd your external style sheets, I completely understand. Just make sure that your internal styles aren’t going to be repeated somewhere else.
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				p.special_p &#123;<br>
+				color:#900;<br>
+				&#125;<br>
+				&lt;/style&gt;<br>
+				&lt;p class="special_p"&gt;Sample Style Text&lt;/p&gt;<br>
+			</p>
+			</div>
+			<br><br><br><br><br><br>
+			<h3 class="result">
+				Result
+			</h3>
+			<p style="color:#900";>Sample Styled Text</p>
+			<h2>External Style Sheets</h2>
+			<p>
+				Take everything from the p.special_p to the } and put it into its own separate file with an extension of .css to declare it as a CSS file. We can reference this file to do exactly what happened above, but now we can use the class=”special_p” in every new HTML document we create. All of those new files with a paragraph tag that has that specific class will be colored red. Linking to the file is really easy. Somewhere toward the bottom of your HTML head tag, put the following:
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;link rel="stylesheet" type="text/css" href="mystyle.css" media="screen"/&gt;
+
+			</p>
+			</div>
+			<p>
+				A few of these are standard for referencing a style sheet. The rel attribute will always be set to “stylesheet” and type will always be set to “text/css”. The href will be the set to the path to your stylesheet. Finally, the media tag is the most complicated. It is most often set to screen because that is a reference to the computer’s screen. However, there a couple other references, such as “print” for whenever users try to print your page, “handheld” for phones, etc. Can we finally learn some CSS? Of course!
+			</p>
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

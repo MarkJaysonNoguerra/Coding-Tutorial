@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Switch Statement</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/switchstatement.css">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="Operators.html">Operators</a>
+			<a href="ifstatement.html">If Statements</a>
+			<a href="switchstatement.html">Switch Statement</a>
+			<a href="function.html">Functions</a>
+			<a href="Javascript quiz">Javascript Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1>Switch Statement</h1>
+		<br><br>
+			<p>
+				A switch statement is very similar to an if statement. If statements provide the possibility of attaching else ifs and an else, which helps JavaScript handle multiple conditionals. However, an if statement with many extra conditionals seems a bit excessive and is difficult to read. Typically, a programmer, like yourself, would want to break the if statement down into more readable pieces. The switch statement excels at code readability. The example below will introduce us into the syntax and structure of a standard switch statement.
+			</p>
+			<br><br><br>
+			<h3 class="result">Example</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+			&lt;script type="text/javascript"&gt;<br>
+			var x = 3;<br>
+			switch(x)<br>
+			&#123;<br>
+			case 1: // This case condition is the same as the if conditional of if(x == 1)<br>
+
+			document.write(‘Case 1.’);<br><br>
+
+			break; case 2: // This case condition is the same as the if conditional of if(x == 2)<br>
+
+			document.write(‘Case 2.’);<br><br>
+
+			break; case 3: // This case condition is the same as the if conditional of if(x == 3)<br><br>
+
+			document.write(‘Case 3.’);<br>
+
+			break; case 4: // This case condition is the same as the if conditional of if(x == 4)<br><br>
+
+			document.write(‘Case 4.’);<br><br>
+
+			break; default: // This case condition is similar to the else statement<br>
+
+			document.write(‘Default.’);<br><br>
+
+			break;<br><br>
+
+			&#125;
+</script>
+			</p>
+		</div>
+			<br><br>
+			<h3 class="result">Result</h3>
+			<br><br>
+			<p>Case 3. </p>
+			<br><br>
+			<p>To define a switch statement, you begin with the keyword switch and place the value in parentheses. Generally, this value will be a variable, but you can also place numbers or strings in the parentheses as well. Once inside the switch statement, new keywords like case, break, and default appear. The keyword case is followed by some value. However, the value following the case is usually a static value like an integer or a string rather than a variable, but that does not mean you couldn’t use a variable instead. In an if statement, we have a condition, and whenever that condition is met, we execute the statement inside of it. The case condition is more like an if statement that has an equal to (==) conditional. 
+			</p>
+			<p>Following the colon, we can provide statements that we want to be executed whenever the condition is true. Statements can be provided inside the case until a break is defined and executed. The keyword break states that the condition is over and to exit out of the switch statement (break is also used in JavaScript loops). Finally, the last important term in the example is default. Other than the syntactic difference, default performs the exact same task as an else statement does. If none of the cases are true, the default case will be executed.
+			</p>
+			<br><br>
+			<p>
+				The logic in the example is simple. First, our variable x equals the integer 3. We proceed through the switch statement until we find a case that is equal to 3. Once that condition has been met, we execute the document.write(‘Case 4.’); found inside the appropriate case. Ultimately, switch statements are not used very often in contrast to the if statement. But, the switch statement provides order and simplicity when you are modifying the code or adding extra conditionals.
+			</p>
+			
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

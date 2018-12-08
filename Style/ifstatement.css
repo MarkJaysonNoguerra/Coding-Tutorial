@@ -1,0 +1,21 @@
+.tut .codes {
+	height: 110rem;
+}
+.tut {
+	height: 216rem;
+}
+.not {
+	padding : 1rem;
+	background : black;
+	color : white;
+	text-align: center;
+	font-size : 2rem;
+	color : white;
+
+}
+.not a:visited {
+	color : white;
+}
+.not a:active {
+	color : white;
+}

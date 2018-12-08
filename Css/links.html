@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Classes</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/back.css">
+	
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="classes.html">Classes</a>
+			<a href="font.html">Font Spacing</a>
+			<a href="background.html">Background</a>
+			<a href="links.html">Links</a>
+			<a href="list.html">list</a>
+			<a href="tables.html">Tables</a>
+			<a href="border.html">Border</a>
+			<a href="marginpadding.html">Margin and Padding</a>
+			<a href="displayfloat.html">Display and Float</a>
+			<a href="position.html">Position and Alignment</a>
+			<a href="cssquiz.html">CSS Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Links </h1>
+		<br><br>
+			<p>
+				Links have a substantial difference when it comes to CSS classes. There are 5 important styling classes that your browser superimposes on just one link. You have to overwrite each of these classes and in a particular order. Don’t stress, we will go through it together.
+
+			</p>
+			<br>
+			<h2>
+				CSS Link Classes
+			</h2>
+			<ul>
+				<li>a:link – sets the standard link styling</li>
+				<li>a:visited – sets the styling for a link that has been previously visited</li>
+				<li>a:hover – when a user hovers over a link, this sets that link’s new style</li>
+				<li>a:active – sets style when link is activated (clicked)</li>
+				<li>a:focus – sets style when the link has focus (often neglected)</li>
+			</ul>
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				a:link &#123;color:#09f;&#125;<br>
+				a:visited &#123;color:#999;&#125;<br>
+				a:hover &#123;color:#ccc;&#125;<br>
+				a:active &#123;color:#333;&#125;<br>
+				a:focus &#123;color:#03f;&#125;<br>
+				&lt;/style&gt;<br>
+				&lt;a href="#"&gt;blah blah blah &lt;/div&gt;<br>
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<a href="#">blah blah blah</a>	
+			<p>
+				Ack! I hate this overpowering my link’s classes, but I will bear it just for you on this tutorial. You might also be a little bit freaked out by the sudden by the one line per class formatting. I just did the tight formatting to save space (I am a big fan of wide open formatting and indentations). Can we get to talking about the code? Certainly, let’s use my link to see what’s happening.
+			</p><br><br><br><br>
+			<p> In its normal state (a:link), we see it shows a color of #09F. Now, as we hover over it the a:hover class imposes a color of #CCC on the link. Next up, left click and hold it down on the link. This makes a:active take control, which tells the link’s color to turn #333. Now, give it a real click and look at it after the click. a:visited took the reins and said make its color property #999. Last, but not least, we have the less common a:focus. To see it in action try using the tab key to get to the link. You might not have known that this existed, but it most certainly does.
+			</p>
+			
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Introduction</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/introductionjs.css">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="Operators.html">Operators</a>
+			<a href="ifstatement.html">If Statements</a>
+			<a href="switchstatement.html">Switch Statement</a>
+			<a href="function.html">Functions</a>
+			<a href="Javascript quiz">Javascript Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Introduction </h1>
+		<br><br>
+			<p>
+				JavaScript is written into an HTML document in 2 ways:
+			</p>
+			<br>
+			<ul>
+				<li>Using: &lt;script type=”text/JavaScript”&gt; Where you would embed your code here &lt;/script&gt;</li>
+				<li>Or referencing it kind of like an external CSS: &lt;script type=”text/JavaScript” src=”myJavaScript.js”&gt;&lt;/script&gt;</li>
+			</ul>
+				<br><br><br>
+			<p>
+				Below is a very simple HTML Skeleton with our JavaScript embedded using the first method.
+			</p>
+			<br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;h3&gt;My First Javascript Code&lt;/h3&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;document.write("&lt;p&gt;Hello!&lt;/p&gt;");<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+			<br><br>
+			<h3>
+			My First Javascript Code
+			</h3>
+			<p>First, let’s break down document.write(“<p>Hello!</p>”) JavaScript is a Object Based Programming Language. So, in the example above document is the object. In JavaScript, an object followed by a . , such as document. , is an indication that a method or an property will follow. (Also, some programmers often refer to properties as attributes.)
+			</p>
+			<p>The write here is actually one of the document‘s methods. Methods generally have arguments, and in this case, the <p>Hello!</p> is the argument.
+			</p>
+			<p>Now let’s understand an object’s property.
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;h3&gt;Javascript Object Properties&lt;/h3&gt;<br>
+				&emsp;&emsp;&lt;p&gt;<br>
+				&emsp;&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;&emsp;document.write("document.location");<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp;&emsp;&lt;/p&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+		<h3 class="result">Javascript Object Properties</h3>
+		<br><br>
+		<h3>JavaScript Object Properties</h3>
+        <p>
+            <script type="text/JavaScript">
+                document.write(document.location);
+            </script>
+        </p>
+        <br><br><br>
+        <p>
+        	In this example, you can see that we use the document’s property, document.location, as an argument for the method, document.write. The document.location is equal to https://www.afterhoursprogramming.com/tutorial/javascript/introduction-javascript/, but since it was in the method document.write, it actually wrote that to the DOM so that we could see it.
+        </p>
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

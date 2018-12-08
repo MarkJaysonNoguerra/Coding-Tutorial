@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Comments</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/introductionjs.css">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="Operators.html">Operators</a>
+			<a href="ifstatement.html">If Statements</a>
+			<a href="switchstatement.html">Switch Statement</a>
+			<a href="function.html">Functions</a>
+			
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Comments </h1>
+		<br><br>
+			<p>
+				Before we get into commenting, I want to warn you about the slowly ending war of browser support for JavaScript. Back in the day, writing in JavaScript was a battle. You would have to write a ton of different statements for each different type of browser. Luckily, browsers are starting to get on the same page, and JavaScript is supported by all modern browsers. Update: Several years after writing this article, I must confess the entire world of JavaScript has changed. The assumption in the programming world is that a user will have JavaScript enabled if they intend to run any popular website. So, please code away in JavaScript.
+			</p>
+			<br>
+			<ul>
+				<li>Using: &lt;script type=”text/JavaScript”&gt; Where you would embed your code here &lt;/script&gt;</li>
+				<li>Or referencing it kind of like an external CSS: &lt;script type=”text/JavaScript” src=”myJavaScript.js”&gt;&lt;/script&gt;</li>
+			</ul>
+				<br><br><br>
+			<p>
+				JavaScript has a number of ways to comment
+			</p>
+			<br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;/*<br>
+				&emsp;&emsp;&emsp;document.write("everything here is commented.");<br>
+				&emsp;&emsp;&emsp;document.write("it is still comment out.");<br>
+				&emsp;&emsp;&emsp;*/<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+			<br><br>
+			<p>
+				The JavaScript comment above allows everything between the opening /* and the closing */ to be commented.
+			</p>
+			<br><br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;// document.write("Everything on this line after the // is commmeted out.");<br>
+				&emsp;&emsp;&emsp;document.write("This is not a comment.");<br>
+				&emsp;&emsp;&emsp;document.write("This is not a comment out .");//But<br>
+				everything on this line after the // is.
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+		<p>
+			The // comment only comments out everything after it that is still on the same line. The first line of our code is all commented out because the // was at the beginning. However, on the third line, notice that the // is after the document.write method, and that the method is not in the comment.
+
+			</p>
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Ifstatement</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/ifstatement1.css">
+	
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="Operators.html">Operators</a>
+			<a href="ifstatement.html">If Statements</a>
+			<a href="switchstatement.html">Switch Statement</a>
+			<a href="function.html">Functions</a>
+			<a href="Javascript quiz">Javascript Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+	<h3 class="result">
+				Example
+			</h3>
+			<div class="codes" style="height:30rem">	
+			<p class="code">
+			var x = 7;<br>
+			if(x>=6 && x<=8)<br>
+			&#123; <br>
+			    //Since 7 is greater than 6 and is less than 8, this statement would be executed<br>
+			&#125;<br>
+			if(x==7 || x>=8)<br>
+			&#123;<br>
+			    //This if statement says if x is equal to 7 or if x is greater than 8, then execute this statement. While x is not greater than 8, x is equal to 7; therefore, it will execute the statement.<br>
+			&#125;<br>
+			if(!(x==6))<br>
+			&#123;<br>
+			   //Since x is equal to 7 and we are checking if that statement is false, this statement would be executed.<br>
+			&#125;<br>			
+			</p>
+		</div>
+		<br><br>
+		<p>
+			If statements can be just as simple as the examples above, but they can also be more useful when you combine the if statements with else if and else.
+		</p>
+
+		<br>
+		<h3 class="result">
+			Example
+		</h3>
+		<br><br>
+		<div class="codes" style="height:30rem">	
+			<p class="code">
+			var x = 6;<br>
+			if(x == 8)<br>
+			&#123;
+			    x++;<br>
+			    document.write("if(x = 8) and now x = " + x);//This would not be executed because x is not equal to 8<br>
+			&#125;<br>
+			else if (x == 7)<br>
+			&#123;<br>
+			    x = 4;<br>
+			    document.write("else if (x = 7) and now x = " + x);//This would not be executed because x is not equal to 7<br>
+			&#125;<br>
+			else<br>
+			&#123;<br>
+			    x = 20;<br>
+			    document.write("else and now x = " + x);//This would be executed because the other conditionals were not met<br>
+			&#125;
+			</p>
+		</div>
+		<br><br>
+		<h2 class="result">Result</h2>
+		<br><br>
+		<p>
+			You might be asking yourself, “What is the point in an else if statement?” Well consider the following examples
+			</p>
+			<br><br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes" style="height:35rem">	
+			<p class="code">
+			var x = 8;<br>
+			if(x == 8)<br>
+			&#123;<br>
+			    x++;<br>
+			    document.write("if(x = 8) and now x = " + x);//This statement would be executed because x is equal to 8<br>
+			&#125;<br>
+			if (x == 7)<br>
+			&#123;<br>
+			    x = 4;<br>
+			    document.write("else if (x = 7) and now x = " + x);//This statement would not be executed because x is not equal to 7<br>
+			&#125;<br>
+			else<br>
+			&#123;<br>
+			    x = 20;<br>
+			    document.write("else and now x = " + x);//This statement would be executed because the other conditionals were not met<br>
+			&#125;<br>
+            
+			</p>
+		</div>
+		<br>
+		<h3 class="result">
+			Result
+		</h3>
+		<br><br>
+		<p>Why did the if(x == 8) and the else both execute their statements? It is best to think of ifs as completely separate conditionals, but else if and else build off whichever if they follow. So, if you had an if statement that was following by and another if statement, the first if statement would be separate from the second if statement just like the example above. However, the second if statement in the example above, has an else built onto it. Since the first if statement’s condition is satisfied, it executes its statements. The second if statement’s condition is not satisfied, but its built on else statement’s condition is satisfied. Therefore, x is incremented in the first conditional, and “if(x = 8) and now x = ” + x is displayed on the screen. Also, we have the second if’s else that sets x equal to 20, and “else and now x = ” + x is displayed on the screen.
+		</p>
+	</div>
+	</section>
+			
+	<div class="clearfix"></div>
+
+	
+	
+</body>
+</html>

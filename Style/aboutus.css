@@ -1,0 +1,104 @@
+
+* {
+	margin: 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+
+nav {
+	background : #EAEAEA;
+	text-align : right;
+		
+}
+.home {
+	float : left;
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	padding : 0.31rem;	
+}
+ul a {
+	display : inline-block;
+	padding : 1.6rem;
+	font-family: sans-serif;
+	text-decoration: none;	
+	font-size : 1.4rem;
+	
+}
+ul a:hover {
+	color : #AD974F;
+}
+.name {
+	margin : 0 28.5rem;
+	color : #AD974F;
+	font-size : 2rem;
+}
+h2 .name {
+	margin-top : -5rem;
+	color :#AD974F;
+
+}
+
+.main-menu {
+	margin-top : 3.75rem;
+}
+.main-menu a {
+	background : rgba(35,31,32, 0.7);
+	border : 0px solid #231F20;
+	padding : 7rem;
+	display : inline-block;
+	margin : 5.125rem 30rem;
+	border-radius : 11.24rem;
+}
+a.html {
+	margin : 5rem 30rem;
+	margin-top: 2rem;
+}
+.main-menu a:hover {
+	transform: scale(1.5); 
+}
+.main-menu .html {
+	background-image: url(../images/markjaysonNoguerra.jpg);
+	background-size :cover;
+}
+.main-menu .css {
+	background-image: url(../images/OliverLeeIpac.jpg);
+	background-size :cover;
+}
+.main-menu .javascript {
+	background-image: url(../images/saldyZantua.jpg);
+	background-size :cover;
+}
+.main-menu .sql {
+	background-image: url(../images/donLumalang.jpg);
+	background-size :cover;
+}
+.main-menu .php {
+	background-image: url(../images/last.jpg);
+	background-size :cover;
+}
+.main-menu .python {
+	background-image: url(../images/python.jpeg);
+	background-size :cover;
+}
+
+@media only screen and (max-width:900px) {
+	
+.home {
+	position : relative;
+	display : block;
+	padding-bottom : 1rem;
+	margin-right  :10rem;	
+}
+ul a {
+	padding : 0.5rem;
+	margin : 0.3rem;
+	padding-top : .8rem;
+	padding-bottom : .8rem;
+	
+}
+ .main-menu a {
+	margin : 2.5rem 3rem;
+}
+
+}

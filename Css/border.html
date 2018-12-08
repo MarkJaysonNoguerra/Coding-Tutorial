@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Classes</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/border.css">
+	
+</head>
+<body>
+
+	
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="classes.html">Classes</a>
+			<a href="font.html">Font Spacing</a>
+			<a href="background.html">Background</a>
+			<a href="links.html">Links</a>
+			<a href="list.html">list</a>
+			<a href="tables.html">Tables</a>
+			<a href="border.html">Border</a>
+			<a href="marginpadding.html">Margin and Padding</a>
+			<a href="displayfloat.html">Display and Float</a>
+			<a href="position.html">Position and Alignment</a>
+			<a href="cssquiz.html">CSS Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Borders </h1>
+		<br><br>
+			<p>
+				The CSS property border has done wonders in the field of organization and separation of content. However, I would also argue that overuse of border leads to excessive visual distractions. Enough of my personal vendetta against overcrowding, let’s actually talk about borders. HTML elements are nested inside tags, which means they have implicit borders. We will be making those explicit with the CSS border properties. The properties of borders are very numerous and the majority of these border properties are useful. However, if we can categorize most of them in our minds, we will have a manageable list and idea of how to use borders.
+
+			</p>
+			<br>
+			<h2>
+				Common CSS Border Properties
+			</h2>
+			
+			<ul>
+				<li>border-width – sets size of the border’s line width</li>
+				<li>border-color – sets size of the border’s line color</li>
+				<li>border-style – sets the border’s style</li>
+				<li>border-radius – gives the border a rounded line (Not supported in all browsers)</li>
+			</ul>
+			<p>
+				I know, I know. You’re thinking what the is point in telling me something that isn’t supported in all browser, but this one is super awesome and is supported in most current browsers. The border-radius breaks the mold of boring borders and in CSS3 they even have cool shadow effects! The others are pretty self-explanatory. Let’s code them up.
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				&emsp;div.special &#123;<br>
+				&emsp;&emsp;width:150px;<br>
+		        &emsp;&emsp;text-align:center;<br>
+		        &emsp;&emsp;border-width:medium;<br>
+		        &emsp;&emsp;border-color:#009;<br>
+		        &emsp;&emsp;border-style:outset;<br>
+		        &emsp;&emsp;border-radius:5px;<br>
+
+
+				&#125;<br>
+				&lt;/style&gt;<br>
+				&lt;div class="special"&gt;<br>
+				&emsp;Sample Content<br>
+				&lt;/div&gt;
+				
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<div style="width:150px;
+        text-align:center;
+        border-width:medium;
+        border-color:#009;
+        border-style:outset;
+        border-radius:5px;">
+        Sample Content
+       		</div>
+			<br><br><br><br>
+			<p> Boom! Now, we have an awesome looking border. We set the width and text alignment of the class really quick, but then we got into border properties. The border-width is somewhat tricky. I set it to medium just so you would scratch your head. It can actually be set to real quantifiable measures like 5px. It’s always good to know you can use the thin, medium, and thick though. Next, border-color doesn’t really elicit an explanation, but border-style certainly does. We have it set to outset here, which happened to be my favorite before CSS3 shadows. It can apply a few different styles like dashed, solid, outset, inset, etc. Finally, border-radius takes a measurement to determine how much to bend at each corner.
+			</p>
+			<br><br><br>
+			<h3>
+				Border Sides
+			</h3>
+			<p>
+				Now, I have withheld important information from you. Quite often, you might only want a border on the bottom, only on two sides, etc., this is very simple to do. The browser reads your CSS and assumes you want every side to display. In all actuality, we can just tell the sides not to show.
+			</p>
+			<br><br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				&emsp;div.special2 &#123;<br>
+				&emsp;&emsp;width:150px;<br>
+		        &emsp;&emsp;text-align:center;<br>
+		        &emsp;&emsp;border-style:solid;<br>
+		        &emsp;&emsp;border-right:none;<br>
+		        &emsp;&emsp;border-left:none;<br>
+		        &emsp;&emsp;border-top:none;<br>
+
+
+				&#125;<br>
+				&lt;/style&gt;<br>
+				&lt;div class="special2"&gt;<br>
+				&emsp;Sample Content<br>
+				&lt;/div&gt;
+				
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<br><br>
+			<div style="width:150px;
+        text-align:center;
+        border-style:solid;
+        border-right:none;
+        border-left:none;
+        border-top:none;">Sample Content</div>
+			<br><br><br>
+			<p>The bottom part of the border is only show because the rest were deliberately told not to display. If we wanted to completely make it disappear, which we don’t because that would be stupid, we would also have put border-bottom:none;. That would have given us an invisible border. You can also use border-bottom-style:none to do everything we just did with one line. All of the previous properties mention can be implemented just by typing border- plus the side top- for example plus the actual property color.
+			</p>
+			
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

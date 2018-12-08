@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Operators</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/Operators.css">
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="Operators.html">Operators</a>
+			<a href="ifstatement.html">If Statements</a>
+			<a href="switchstatement.html">Switch Statement</a>
+			<a href="function.html">Functions</a>
+			<a href="Javascript quiz">Javascript Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1>Operators</h1>
+		<br><br>
+			<p>
+				JavaScript Operators are pretty standard. They are exactly what you would expect from your high school math class. Operators are anything you use when comparing or acting upon with numbers/values.
+			</p>
+			<br><br>
+			<h2>
+				Arithmetic Operators:
+			</h2>
+			<br><br><br>	
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;var y = 7;  //Setting our variable<br>
+				&emsp;&emsp;&emsp;var x = y + 2; //Addition, x would equal 9 here<br>
+				&emsp;&emsp;&emsp;var x = y - 2;  //Subtraction, x would equal 5<br>
+				&emsp;&emsp;&emsp;var x = y * 2;  //Multiplication, x would equal 14<br>
+				&emsp;&emsp;&emsp;var x = y / 4;  //Division, x would equal 1.75<br>
+				&emsp;&emsp;&emsp;var x = y % 3;  //Modulus (Divison Remainder), x would equal 1<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+			<br><br>
+			<h2>
+				Incrementing and Decrementing JavaScript Operators
+			</h2>
+			<br><br>
+			<p>
+				Incrementing is adding 1, while decrementing is subtracting 1.
+			</p>
+			<br><br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;var x = 0;<br>
+				&emsp;&emsp;&emsp;var y = 0;<br>
+				&emsp;&emsp;&emsp;var z = 0;<br>
+				&emsp;&emsp;&emsp;document.write("w++ = " + w++); //Writing our results<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Writing a line break<br>
+				&emsp;&emsp;&emsp;document.write("x-- = " + x--); //Writing our results<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("++y = " + ++y); //Writing our results<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("--z = " + --z); //Writing our results<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+            
+			</p>
+		</div>
+		<br>
+		<h3 class="result">
+			Result
+		</h3>
+		<br><br>
+		<p>
+			Incrementing and decrementing is a somewhat difficult concept, so take a deep breath and relax. We have a standard document.write method happening. In that method, we have a string that is showing you which variable we are talking about. So, the “w++ = “ is a string and not a variable. Then, we add that string to the w++ variable that is being incremented. (Quick Note: Strings can be combined with integers using the +, however, if you were to try to combine two integers in this manner, it would give you the sum of them.) The important part here is the order of the increment or decrement operator. Notice how incrementing the w, as in w++, gives you the result of 0, but incrementing the y, as in ++y, gives you the result of 1. This is because it is an increment operator has two options. Since the increment operator is after the w, as in w++, it needs incremented after the statement has been performed, while ++y is incremented before the statement is performed, since the ++ is before the y.
+
+			</p>
+			<br><br><br>
+			<p>
+				Let’s try to clear up that String + integer part really quick:
+			</p>
+			<br><br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;var string1 = "You are awesome, ";<br>
+				&emsp;&emsp;&emsp;var string2 = "and you know it.";<br>
+				&emsp;&emsp;&emsp;var string3 = string1 + string2;<br>
+				&emsp;&emsp;&emsp;document.write(string3);<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+            
+			</p>
+		</div>
+		<br>
+		<h3 class="result">
+			Result
+		</h3>
+		<br><br>
+		<p>You are awesome, and you know it.</p>
+		<p>So, that is how you combine two strings.</p>
+		<br><br><br>
+		<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp; var x = "7";<br>
+				&emsp;&emsp;&emsp;var y = 7;<br>
+				&emsp;&emsp;&emsp;var example1 = x + x;<br>
+				&emsp;&emsp;&emsp;var example3 = x + y;<br>
+				&emsp;&emsp;&emsp;var example3 = x + y;<br>
+				&emsp;&emsp;&emsp;var example4 = y + x;<br>
+				&emsp;&emsp;&emsp;document.write("Example1 = " + example1);<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("Example2 = " + example2);<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("Example3 = " + example3);<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("Example4 = " + example4);<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+            
+            
+			</p>
+		</div>
+		<br><br>
+		<h3 class="result">	
+		Result</h3><br><br><br>
+		<p>Example1 = 77<br>
+		Example2 = 14<br>
+		Example3 = 77<br>
+		Example4 = 77<br>
+	</p>
+		<br><br><br>
+		<p>First off, the document.write(“Example1 = ” + is just writing out a string “Example1 = ” and combining that with our returning variable. So, example1 returns 77 because the string “7” + “7” is simply the joined of a string into “77”. Next, example2 returns 14 because the integer 7 added to the integer 7 equals 14. Finally, example3 returns 77 because the string 7 is combined with the integer 7, and the only way JavaScript knows how to join and integer and a string is by joining them like two strings. The same is true for example4
+		</p>
+		<br><br>
+		<h2>
+			Assignment Operators
+		</h2>
+		<br><br>
+		<p>
+			These are not a necessity for programmers, but they are great shortcuts.
+		</p>
+		<br><br>
+		<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp; var x = 4;<br>
+				&emsp;&emsp;&emsp; var y = 2;<br>
+				&emsp;&emsp;&emsp;x = y;  //x = 2<br>
+				&emsp;&emsp;&emsp;x += y;  //x = 6, (this is the same as x = x + y;)
+<br>
+				&emsp;&emsp;&emsp; x -= y;  //x = 2, (this is the same as x = x - y;)<br>
+				&emsp;&emsp;&emsp;x *= y;  //x = 8, (this is the same as x = x * y;)<br>
+				&emsp;&emsp;&emsp;x /= y;  //x = 2, (this is the same as x = x / y;)<br>
+				&emsp;&emsp;&emsp;x %= y;  //x = 0, (this is the same as x = x % y;)<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

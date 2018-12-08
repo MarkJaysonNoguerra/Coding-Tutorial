@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Classes</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/tablecss.css">
+	
+</head>
+<body>
+
+			<style type=”text/css”>
+			.special table{color:#000;}
+			.special th{color:#FFF;background-color:#090;}
+			.special tr{width:400px;}
+			.special td{width:100px;}
+			.special tr:nth-child(even){background-color#FFF;}
+			.special tr:nth-child(odd){background-color:#CCC;}
+			</style>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="classes.html">Classes</a>
+			<a href="font.html">Font Spacing</a>
+			<a href="background.html">Background</a>
+			<a href="links.html">Links</a>
+			<a href="list.html">list</a>
+			<a href="tables.html">Tables</a>
+			<a href="border.html">Border</a>
+			<a href="marginpadding.html">Margin and Padding</a>
+			<a href="displayfloat.html">Display and Float</a>
+			<a href="position.html">Position and Alignment</a>
+			<a href="cssquiz.html">CSS Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Tables </h1>
+		<br><br>
+			<p>
+				HTML tables by themselves are boring, but not when you add CSS styling to them. We will be focusing on how to use the table selectors and a cool odd and even effect on the table rows to make them more readable. I can’t tell you how many times I go to a website and am sitting there glaring at a table in a fit of anger. Why am I so angry you may ask? Because I keep losing my spot! They didn’t bother to use borders, or distinguish one row from another. Let’s try to be better than that.
+
+			</p>
+			<br>
+			<h2>
+				CSS Table Selectors
+			</h2>
+			<p>Technically, we will just be dealing the standard HTML tags as selectors with no sub class. Essentially, we have 4 tags to discover and manipulate. Those tags are:
+			</p>
+			<ul>
+				<li>table – the whole table</li>
+				<li>tr – the rows in the table</li>
+				<li>th – the table headers</li>
+				<li>td – the table columns</li>
+			</ul>
+			<p>
+				I am going to attempt to knock this out with one single example. I will also show you some neat CSS rules to differentiate one row from its neighbors. Bring out the example, please!
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				.special table&#123;color:#000;&#125;<br>
+				.special th&#123;color:#FFF;background-color:#090;&#125;<br>
+				.special tr&#123;width:400px;&#125;<br>
+				.special td&#123;width:100px;&#125;<br>
+				.special tr:nth-child(even)&#123;background-color#FFF;&#125;<br>
+				.special tr:nth-child(odd)&#123;background-color:#CCC;&#125;<br>
+				&lt;/style&gt;<br>
+				
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<table class=”special” cellpadding="0" cellspacing="0">
+ 
+				<tr>
+				 
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+				<th>Heading 3</th>
+				<th>Heading 4</th>
+				</tr>
+				<tr>
+				 
+				<td>Row1 Col1</td>
+				<td>Row1 Col2</td>
+				<td>Row1 Col3</td>
+				<td>Row1 Col4</td>
+				</tr>
+				<tr>
+				 
+				<td>Row2 Col1</td>
+				<td>Row2 Col2</td>
+				<td>Row2 Col3</td>
+				<td>Row2 Col4</td>
+				</tr>
+				<tr>
+				 
+				<td>Row3 Col1</td>
+				<td>Row3 Col2</td>
+				<td>Row3 Col3</td>
+				<td>Row3 Col4</td>
+				</tr>
+			</table><br><br><br><br>
+			<p> You might have noticed that I left the HTML code for the table out. That’s simply because it would make them example massive, and I will include it at the bottom. I gave all of the tables a special class so that it won’t affect how to print these pages. With the table CSS selector, we set the all the font in the table to the color #000. Next, we set our table headers (th) selectors apart from the td selectors. This gives us that solid green background and white font color at the top of the table. We only use the tr selector to set the width, which could have actually been done in the table, but I lacked a good example. After that, we set the width of our columns by using the td. Onto the cool alternating background color rows…
+			</p>
+			<br><br><br>
+			<h3>
+				Different Style Rows
+			</h3>
+			<p>
+				Fortunately, the w3 guys gave rise to CSS rules for developers to better customize the stylesheets. One of those “rules” is attains a numerical order of the table rows in a table. These implemented in a comparable manner to links by using a colon after the selector. Here, we used nth-child(even) to set all even rows’ background to #FFF. Alternatively, we employed nth-child(odd) to change all odd rows’ background to #CCC. See, that wasn’t too bad. Now as I promised:
+			</p>
+			<br><br><br>
+			
+			
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

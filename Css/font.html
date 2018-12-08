@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Classes</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/font.css">
+	
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="classes.html">Classes</a>
+			<a href="font.html">Font Spacing</a>
+			<a href="background.html">Background</a>
+			<a href="links.html">Links</a>
+			<a href="list.html">list</a>
+			<a href="tables.html">Tables</a>
+			<a href="border.html">Border</a>
+			<a href="marginpadding.html">Margin and Padding</a>
+			<a href="displayfloat.html">Display and Float</a>
+			<a href="position.html">Position and Alignment</a>
+			<a href="cssquiz.html">CSS Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Font and Spacing </h1>
+		<br><br>
+			<p>
+				Let’s start off with using our CSS to make some awesome text by changing the font and spacing. CSS can do so many awesome things, but often the font and spacing are overlooked, much like typography in general. I must admit, I love typography, even though I am not the best at it. So, this will be a rather long tutorial, but you will have a great start!
+
+
+			</p>
+			<br>
+			<h2>
+				Setting the CSS Font
+			</h2>
+			<p>
+				CSS has a ton of properties, but no worries. Even guys like me that love CSS don’t use the majority of them. You will definitely possess a solid base of CSS knowledge after reading all of these tutorials that you can nurture and grow later to become a styling master. Common font related properties:
+			</p>
+			<ul>
+				<li>color – sets the font color</li>
+				<li>font-size – sets the font size</li>
+				<li>font-weight – sets the font weight (skinny to very bold)</li>
+				<li>text-align – sets the font position inside element (left, center, right, justify)</li>
+				<li>font-family – sets the actual font type</li>
+			</ul>
+			<h3 class="result">
+				Example
+			</h3>
+			<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				p.special_one &#123;<br>
+				color:#900;<br>
+				font-size:2em;<br>
+				font-weight:100;<br>
+				text-align:center;<br>
+				font-family:”Arial”, “Myriad Web Pro”, Arial, serif;<br>
+				&#125;<br>
+				&lt;/style&gt;<br>
+				&lt;p class="special_one"&gt;
+				Sample CSS Demo
+				&lt;/p&gt;<br>
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<p style=”color:#900; font-size:2em; font-weight:100; text-align:center; font-family:arial;”> Sample CSS Demo</p><br><br>
+			<h2>Text Spacing</h2>
+			<p>
+				When I talk about text spacing, I am referring to characters in relation to other characters. The first important property is letter-spacing, which is the horizontal spacing between characters. The second and final is the line-height that is the vertical spacing between text lines.
+			</p>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;style type="text/css"&gt;<br>
+				p.special_two &#123;<br>
+				letter-spacing:.1em;<br>
+				line-height:2em;<br>
+				&#125;<br>
+				&lt;/style&gt;<br>
+				&lt;p class="special_two"&gt;
+				We will get to the idea of block spacing and margin spacing,
+but for now we will only speak of them to have default text.
+				&lt;/p&gt;<br>
+			</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3><br><br>
+			<p style="letter-spacing: .1em; line-height:2em;";>We will get to the idea of block spacing and margin spacing, but for now we will only speak of them to have default text.</p><br><br>
+			<p>
+				Try using that style with a dark background. You will soon see why, and we will discuss this further in the Graphic Design tutorial. Basically, the extra white space between the lines helps your eyes read the text more easily. Of course, the letter-spacing property usually is not necessary to help with reading. Alright, we can clearly see that the letter-spacing is set to .1em. What the heck is an em? An em is a flexible measurement compared to its brother px (short for pixel). Generally, try to use em instead of px (again, we’ll go into why later). The second property line-height is set to 2em, which gives us a greater difference in the distance between lines. As I said, letter-spacing is not very commonly used, but line-height is and it can make all the difference.
+			</p>
+			
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

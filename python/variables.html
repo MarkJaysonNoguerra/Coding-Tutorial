@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Variables</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/pythonstyle.css">
+	<link rel="stylesheet" href="../Style/variablespython.css">
+		
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="overview.html.html">Python  </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="operators.html">Operators</a>
+			
+			<a href="ifstatements.html">If Statement</a>
+			<a href="functions.html"> Function</a>
+			<a href="forloop.html">For Loop</a>
+			<a href="whileloop.html">While Loop</a>
+			<a href="strings.html">Strings</a>
+			<a href="lists.html">Lists</a>
+			<a href="tuples.html">Tuples</a>
+			<a href="dictionaries.html">Dictionaries</a>
+			<a href="formatting.html">Formatting</a>
+			<a href="exceptions.html">Exceptions</a>
+			<a href="readinfiles.html">Reading Files</a>
+			<a href="writingtofiles.html">Writing to Files</a>
+			<a href="classes.html">Classes</a>
+			<a href="django.html">Django</a>
+			<a href="../Html/htmlquiz.html">Python Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> Variables </h1>
+		<br><br>
+			<p>
+				In the heart of every good programming language, including Python, are the variables. Variables are an awesome asset to the dynamic world of the web. Variables alone are dynamic by nature. However, Python is pretty smart when it comes to variables, but it is sometimes quite a pain. Python interprets and declares variables for you when you set them equal to a value. Example:
+			</p>
+			<br>
+			<h3 class="result">
+				Example
+			</h3>
+			<br>
+			<div class="codes">
+				<p class="code">
+					a = 0<br>
+					b = 2<Br>
+					print(a  + b)
+				</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<p>
+				2
+			</p>
+			<p>	Isn’t that cool how Python figured out how a and b were both numbers. Now, let’s try it with the mindset of wanting the 0 to be a string and the 2 to also be a string to create a new string “02”.
+			</p>
+			<br><br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<br>
+			<div class="codes">
+				<p class="code">
+					a = "0"<br>
+					b = "2"<br>
+					print(a  + b)
+				</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<p>
+				02
+			</p>
+			<p>
+				Ah, see! Now, it thinks they are both strings simply because we put them in quotations. Don’t worry if you don’t understand strings yet, just note that they are not numbers or integers. This is really awesome, but as with any element or practice in a programming language there is always the flip side, especially with this auto declaration thing. Suppose we started off with “0” being a string, but we change our mind and want it to be a number. Finally, we decide that we want to add it to the number 2. Python bites us with an error. This brings us to the idea of casting the variable into a certain type.
+			<p>
+				<br><br><br>
+				<h3 class="result">
+				Example
+			</h3>
+			<br>
+			<div class="codes">
+				<p class="code">
+					a = "0"<br>
+					b = 2<br>
+					print(int(a)  + b)
+				</p>
+			</div>
+			<h3 class="result">
+				Result
+			</h3>
+			<p>
+				2
+			</p>
+			<p>
+				Whoa, what is that int() thing? This is how you cast one variable type into another. In this example, we cast the string 0 to an integer 0. Let’s take a quick peak at a few of the important variable types in Python:
+			</p><br><br>
+			<li>
+				<li>int(variable) – casts variable to integer</li>
+				<li>str(variable) – casts variable to string</li>
+				<li>float(variable) – casts variable to float (number with decimal)</li>
+			</li>
+			<br><br><br>
+			<p>
+				Like I said, those are just the most commonly used types of casting. Most of the other variable types you typically wouldn’t want to cast to.
+			</p>
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

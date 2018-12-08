@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Function</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="comments.html">Comments</a>
+			<a href="variables.html">Variables</a>
+			<a href="Operators.html">Operators</a>
+			<a href="ifstatement.html">If Statements</a>
+			<a href="switchstatement.html">Switch Statement</a>
+			<a href="function.html">Functions</a>
+			<a href="Javascript quiz">Javascript Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1>Function</h1>
+		<br><br>
+			<p>
+				JavaScript Functions are extremely useful, and they can save you from writing bunch of redundant code.
+			</p>
+			<br><br>
+			<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;function annoyingPopup()<br>
+				&emsp;&emsp;&emsp;&#123;<br>
+				&emsp;&emsp;&emsp;&emsp;alert(" The most annoying thing ever. ");<br>
+				&emsp;&emsp;&emsp;&#125;<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp;&emsp;&lt;form&gt;<br>
+            	&emsp;&emsp;&emsp;&lt;input type="button" value="Click me!" onclick="annoyingPopUp()" /&gt;<br>
+        		&emsp;&emsp;&lt;/form&gt;
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+			<br><br>
+			<p>
+				One way to execute JavaScript functions is to use a button’s onclick attribute. Putting annoyingPopUp() in the onclick=”” will call the JavaScript function annoyingPopUp. Of course, that will cause the most annoying method to be called, which is alert. Alert is actually a method of the window object, but in it is often shortened to just alert(); This is a very rare exception, and most methods are not shortened like this. Whatever is inside the () of the alert() is what will be shown in an alert box.
+			</p>
+			<br><br><br>
+			<p>
+				Every time, you click this button the annoyingPopUp function will keep giving you the alert.
+			</p>
+		<br>
+		<h3 class="result">
+			Example
+		</h3>
+		<br><br>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp;function sampleFunction(argument1)<br>
+				&emsp;&emsp;&emsp;&#123;<br>
+				&emsp;&emsp;&emsp;&emsp;alert(argument1);<br>
+				&emsp;&emsp;&emsp;&#125;<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp;&emsp;&lt;form&gt;<br>
+            	&emsp;&emsp;&emsp;&lt;input type="button" value="Click me!" onclick="sampleFunction(' Test Argument ')"  /&gt;<br>
+        		&emsp;&emsp;&lt;/form&gt;
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+            
+			</p>
+		</div>
+		<br>
+		<h3 class="result">
+			Result
+		</h3>
+		<br><br>
+		<p>You are awesome, and you know it.</p>
+		<p>So, that is how you combine two strings.</p>
+		<br><br><br>
+		<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp; var x = "7";<br>
+				&emsp;&emsp;&emsp;var y = 7;<br>
+				&emsp;&emsp;&emsp;var example1 = x + x;<br>
+				&emsp;&emsp;&emsp;var example3 = x + y;<br>
+				&emsp;&emsp;&emsp;var example3 = x + y;<br>
+				&emsp;&emsp;&emsp;var example4 = y + x;<br>
+				&emsp;&emsp;&emsp;document.write("Example1 = " + example1);<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("Example2 = " + example2);<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("Example3 = " + example3);<br>
+				&emsp;&emsp;&emsp;document.write("&lt;br/&gt;"); //Line break<br>
+				&emsp;&emsp;&emsp;document.write("Example4 = " + example4);<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+            
+            
+			</p>
+		</div>
+		<br><br>
+		<h3 class="result">	
+		Result</h3><br><br><br>
+		<p>Example1 = 77<br>
+		Example2 = 14<br>
+		Example3 = 77<br>
+		Example4 = 77<br>
+	</p>
+		<br><br><br>
+		<p>First off, the document.write(“Example1 = ” + is just writing out a string “Example1 = ” and combining that with our returning variable. So, example1 returns 77 because the string “7” + “7” is simply the joined of a string into “77”. Next, example2 returns 14 because the integer 7 added to the integer 7 equals 14. Finally, example3 returns 77 because the string 7 is combined with the integer 7, and the only way JavaScript knows how to join and integer and a string is by joining them like two strings. The same is true for example4
+		</p>
+		<br><br>
+		<h2>
+			Assignment Operators
+		</h2>
+		<br><br>
+		<p>
+			These are not a necessity for programmers, but they are great shortcuts.
+		</p>
+		<br><br>
+		<h3 class="result">
+				Example
+			</h3>
+			<div class="codes">	
+			<p class="code">
+				&lt;html&gt;<br>
+				&emsp; &lt;body&gt;<br>
+				&emsp;&emsp;&lt;script type="text/Javascript"&gt;<br>
+				&emsp;&emsp;&emsp; var x = 4;<br>
+				&emsp;&emsp;&emsp; var y = 2;<br>
+				&emsp;&emsp;&emsp;x = y;  //x = 2<br>
+				&emsp;&emsp;&emsp;x += y;  //x = 6, (this is the same as x = x + y;)
+<br>
+				&emsp;&emsp;&emsp; x -= y;  //x = 2, (this is the same as x = x - y;)<br>
+				&emsp;&emsp;&emsp;x *= y;  //x = 8, (this is the same as x = x * y;)<br>
+				&emsp;&emsp;&emsp;x /= y;  //x = 2, (this is the same as x = x / y;)<br>
+				&emsp;&emsp;&emsp;x %= y;  //x = 0, (this is the same as x = x % y;)<br>
+				&emsp;&emsp;&lt;/script&gt;<br>
+				&emsp; &lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+		</div>
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>

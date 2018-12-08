@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>INSERT Query</title>
+	<link rel="stylesheet" href="../Style/shared.css">
+	<link rel="stylesheet" href="../Style/HTML.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/styleinjavascript.css">
+	<link rel="stylesheet" href="../Style/stylesql.css">
+	<link rel="stylesheet" href="../Style//insertstyle.css">
+		
+</head>
+<body>
+	<nav class="mainNav">
+		<ul class="UlMainNav">
+		<a href="../index.html" class="home"><h1>Coding Tutorial</h1></a>
+			<a href="../index.html">Home</a>
+			<a href="#">Language</a>	
+			<a href="../aboutus/index.html">About Us</a>
+			<a href="../contactus/index.html">Contact Us </a>
+		</ul>
+	</nav>
+
+		
+	<section class="SubMenu">
+		<h1> Tutorials </h1>
+		<h3 class="Title"><a href="introduction.html"> CSS </a></h3>
+			<a href="overview.html">Overview</a>
+			<a href="introduction.html">Introduction</a>
+			<a href="selectquery.html">SELECT Query</a>
+			<a href="insertquery.html">INSERT Query</a>
+			<a href="updatequery.html">UPDATE Query</a>
+			<a href="deletequery.html">DELETE Query</a>
+			<a href="multipleconditions.html">Multiple Condition</a>
+			<a href="orderbyandgroupby.html">ORDER BY and GROUP BY</a>
+			<a href="like.html">LIKE</a>
+			<a href="joins.html">JOINs</a>
+			<a href="dateanddatetime.html">DATE and DATETIME</a>
+			<a href="functions.html">Functions</a>
+			<a href="comparingdates.html">Comparing Dates</a>
+			<a href="roundingnumbers.html">Rounding Numbers</a>
+			<a href="sqlquiz.html">SQL Quiz</a>
+	</section>
+	<section class="tut">
+		<div class="container">
+		<h1> INSERT Query</h1>
+		<br><br>
+			<p>
+				The SQL INSERT statement allows you to insert data into your tables. While, it is certainly possible that a website won’t require and INSERT Statement, it isn’t very likely. Giving the user the ability to put fresh data into your tables is extremely useful if done correctly. The SELECT statement doesn’t need as much caution as the next three statements because you aren’t actually mutating the data.
+			</p>
+			<br><br><br>
+		
+			<p>
+				You may be thinking what could INSERT possibly hurt? I mean it only puts new data in a table, it doesn’t delete anything. You would be correct, but if you gave me the chance, I could change your mind very quickly. Ever heard of spam? Think about an INSERT query that repeats itself over and over, while you squirm around trying to figure out why your database has so much duplicated data that it is virtually useless. While in coding you should always be careful, be extra careful for the rest of these tutorials involving INSERT, UPDATE, and DELETE statements. All warnings aside, let’s get to it:
+
+
+			<p>
+				<br>
+			<p>
+				This will be an introduction to SQL and will not cover everything about SQL, but we will get some solid knowledge on how to work with it and learn how to become a query master.. However, you don’t need to be crazy advanced to utilize the majority of SQL’s power. Let’s get to it.
+			</p>
+			<br><br>
+			<div class="codes">	
+			<p class="code">	
+				INSERT INTO table_name(username, password, birthday)
+VALUES( ‘rustyMeerkat’,’digholes’, ‘1995-09-15’)
+				</p>
+				</div>
+			<br><br><br>
+			<p>
+				Don’t freak out. I know it’s a lot different than the SELECT, but it is still really easy. INSERT INTO signals SQL that we are putting new stuff in a table. Of course, table_name is the name of our table. Now, it gets weird. In pseudo code, it is (column_name, column_name, column_name). We just put our column names separated by a comma. Then, we use the keyword VALUES followed by parentheses. Inside the parentheses, we have various values. The order of these values is directly related to the way we put in the columns. For instance, we will be inserting the value ‘rustyMeerkat’ into the username column, ‘digholes’ into the password column, etc. Don’t worry much about the birthday and the date looking value. Dates are a real pain unless they are done right, which we’ll get into later.
+			</p>
+			<br><br><br>
+			<p>
+				But, why is there only 3 values when we have 4 columns? Typically, a good table design will have an ID column. This should also be set to “auto_increment” which tells the database to add one each time. This gives us unique IDs for every record. This unique id will save your life whenever you run into duplicate data situations. Next!
+			</p>
+			
+
+	</div>
+	</section>
+	<div class="clearfix"></div>
+	
+	
+</body>
+</html>
